@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.xrlj</groupId>
-    <artifactId>api-gateway</artifactId>
+    <artifactId>api-gateway-server</artifactId>
     <version>0.0.1</version>
     <packaging>jar</packaging>
-    <name>api-gateway</name>
+    <name>api-gateway-server</name>
     <description>网关</description>
 
     <properties>
@@ -66,10 +66,12 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
+        <!--引入spring cloud gateway-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
+        <!--注册-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
