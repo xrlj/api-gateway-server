@@ -10,6 +10,9 @@ spring:
       enabled: true
       trace:
         enabled: true
+    gateway:
+      routes:
+        - id: open
   mvc:
     favicon:
       enabled: true
@@ -19,3 +22,6 @@ management:
       exposure:
         include: "*"
 #debug: true #调试模式，将会看到更多的日志信息。默认关闭
+server:
+  port: 6666
+
